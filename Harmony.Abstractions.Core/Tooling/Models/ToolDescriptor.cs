@@ -2,7 +2,7 @@
 using System.Text.Json.Serialization;
 
 // -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Models;
+namespace Harmony.Tooling.Models;
 
 /// <summary>
 /// Describes a tool for discovery, preflight, and diagnostics.
@@ -10,6 +10,7 @@ namespace Harmony.Abstractions.Models;
 public sealed class ToolDescriptor
 {
    public required string Name { get; init; }          // canonical: "category.toolName"
+
    public required string Version { get; init; }       // SemVer
    public ToolFlags Flags { get; init; } = ToolFlags.None;
 
@@ -30,4 +31,8 @@ public sealed class ToolDescriptor
 
    /// <summary>Arbitrary metadata (stable, public) for discovery UIs.</summary>
    public Dictionary<string, string>? Metadata { get; init; }
+
+   /// <summary>Arbitrary metadata (private) for host/tooling diagnostics, not for discovery UIs.
+   /// </summary>
+   public Dictionary<string, string>? Tags { get; init; }
 }

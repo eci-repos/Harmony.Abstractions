@@ -2,7 +2,7 @@
 using System.Text.Json;
 
 // -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Contracts;
+namespace Harmony.Tooling.Contracts;
 
 /// <summary>
 /// Redacts sensitive content before it reaches history/artifacts.

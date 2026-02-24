@@ -1,9 +1,9 @@
 ﻿// /Harmony.Abstractions/Contracts/IToolRegistry.cs
 
-// -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Contracts;
+using Harmony.Tooling.Models;
 
-using Harmony.Abstractions.Models;
+// -------------------------------------------------------------------------------------------------
+namespace Harmony.Tooling.Contracts;
 
 public interface IToolRegistry
 {

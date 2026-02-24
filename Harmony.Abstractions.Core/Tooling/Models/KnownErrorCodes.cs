@@ -2,7 +2,7 @@
 // /Harmony.Abstractions/Models/KnownErrorCodes.cs
 
 // -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Models;
+namespace Harmony.Tooling.Models;
 
 public static class KnownErrorCodes
 {

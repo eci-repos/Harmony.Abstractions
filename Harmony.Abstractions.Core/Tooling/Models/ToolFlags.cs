@@ -5,7 +5,7 @@
 // framework. Each flag represents a specific property of a tool, such as whether it is deterministic, replayable,
 // mutating, requires network access, or requires secrets. The flags can be combined using bitwise operations to
 // indicate multiple properties for a single tool.
-namespace Harmony.Abstractions.Models;
+namespace Harmony.Tooling.Models;
 
 [System.Flags]
 public enum ToolFlags

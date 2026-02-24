@@ -2,10 +2,10 @@
 // /Harmony.Abstractions/Infrastructure/InMemoryToolRegistry.cs
 
 // -------------------------------------------------------------------------------------------------
-using Harmony.Abstractions.Contracts;
-using Harmony.Abstractions.Models;
+using Harmony.Tooling.Contracts;
+using Harmony.Tooling.Models;
 
-namespace Harmony.Abstractions.Infrastructure;
+namespace Harmony.Tooling.Infrastructure;
 
 public sealed class InMemoryToolRegistry : IToolRegistry
 {

@@ -1,7 +1,7 @@
 ﻿// /Harmony.Abstractions/Models/Capabilities.cs
 
 // -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Models;
+namespace Harmony.Tooling.Models;
 
 public sealed class Capabilities
 {

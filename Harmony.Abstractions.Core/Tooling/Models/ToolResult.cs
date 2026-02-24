@@ -2,7 +2,7 @@
 using System.Text.Json;
 
 // -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Models;
+namespace Harmony.Tooling.Models;
 
 /// <summary>Result envelope to normalize success/error outcomes and support replay.</summary>
 public sealed class ToolResult

@@ -2,7 +2,7 @@
 using System.Text.Json;
 
 // -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Models;
+namespace Harmony.Tooling.Models;
 
 public sealed class ToolError
 {

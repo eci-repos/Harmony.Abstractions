@@ -1,6 +1,6 @@
 ﻿
 // -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Models;
+namespace Harmony.Tooling.Models;
 
 /// <summary>
 /// Optional hints to support deterministic replay and freshness policies.

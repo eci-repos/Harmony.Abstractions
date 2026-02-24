@@ -2,9 +2,9 @@
 using System.Text.Json;
 
 // -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Contracts;
+namespace Harmony.Tooling.Contracts;
 
-using Harmony.Abstractions.Models;
+using Harmony.Tooling.Models;
 
 public interface ITool
 {

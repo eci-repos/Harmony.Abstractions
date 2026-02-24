@@ -1,9 +1,9 @@
 ﻿// /Harmony.Abstractions/Models/ToolExecutionContext.cs
 
 // -------------------------------------------------------------------------------------------------
-namespace Harmony.Abstractions.Models;
+namespace Harmony.Tooling.Models;
 
-using Harmony.Abstractions.Contracts;
+using Harmony.Tooling.Contracts;
 
 /// <summary>
 /// Optional context for a tool invocation; host supplies correlation and services.

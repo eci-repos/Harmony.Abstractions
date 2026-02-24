@@ -12,8 +12,4 @@
     <PackageOutputPath>c:\NuGetLocalFeed</PackageOutputPath>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Tooling\" />
-  </ItemGroup>
-
 </Project>
