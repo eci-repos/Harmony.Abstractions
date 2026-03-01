@@ -41,7 +41,7 @@ public sealed class ToolPreflightAnalyzer : IToolPreflightAnalyzer
          RequiredTools = required,
          Available = available.OrderBy(x => x, StringComparer.OrdinalIgnoreCase).ToArray(),
          Missing = missing.OrderBy(x => x, StringComparer.OrdinalIgnoreCase).ToArray(),
-         Mode = mode
+         Mode = string.IsNullOrWhiteSpace(mode) ? PreflightReport.DefaultPreflightMode : mode
       };
    }
 }

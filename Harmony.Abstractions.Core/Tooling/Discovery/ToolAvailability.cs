@@ -12,6 +12,9 @@ using System.Reflection;
 
 namespace Harmony.Tooling.Discovery;
 
+/// <summary>
+/// Allows all tools (good for local development and testing, but not recommended for production) 
+/// </summary>
 public sealed class AllowAllToolAvailability : IToolAvailability
 {
    public Task<bool> IsAvailableAsync(string recipient, CancellationToken ct = default)
@@ -24,7 +27,11 @@ public sealed class AllowAllToolAvailability : IToolAvailability
        => Task.FromResult<ToolDescriptor?>(null);
 }
 
-// Restrictive: blocks all (safe default in production until configured)
+/// <summary>
+/// Denies all tools (safe default for production until configured, but not suitable for local 
+/// development and testing)
+/// </summary>
+/// <remarks>Restrictive: blocks all (safe default in production until configured)</remarks>
 public sealed class DenyAllToolAvailability : IToolAvailability
 {
    public static readonly DenyAllToolAvailability Instance = new();

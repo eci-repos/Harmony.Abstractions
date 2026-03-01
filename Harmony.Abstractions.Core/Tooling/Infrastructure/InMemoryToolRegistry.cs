@@ -7,6 +7,10 @@ using Harmony.Tooling.Models;
 
 namespace Harmony.Tooling.Infrastructure;
 
+/// <summary>
+/// In-memory implementation of <see cref="IToolRegistry"/>. This is not thread-safe and should
+/// only be used for testing or in scenarios where a simple, non-persistent registry is sufficient. 
+/// </summary>
 public sealed class InMemoryToolRegistry : IToolRegistry
 {
    private readonly Dictionary<string, ITool> _byName = new(StringComparer.OrdinalIgnoreCase);

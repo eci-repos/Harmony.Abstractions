@@ -2,6 +2,10 @@
 // -------------------------------------------------------------------------------------------------
 namespace Harmony.Tooling.Discovery;
 
+/// <summary>
+/// Tool availability interface for hosts to indicate which tools (e.g., "web.httpGet") are
+/// available for invocation.
+/// </summary>
 public interface IToolAvailability
 {
    /// <summary>

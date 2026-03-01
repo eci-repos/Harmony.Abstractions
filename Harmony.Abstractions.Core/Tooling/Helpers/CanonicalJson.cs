@@ -6,6 +6,13 @@ using System.Text.Json;
 // -------------------------------------------------------------------------------------------------
 namespace Harmony.Tooling.Helpers;
 
+/// <summary>
+/// Canonical JSON serializer for consistent hashing and comparison of JSON structures. It ensures
+/// that JSON objects are serialized with their properties in a consistent order (lexicographically)
+/// and that arrays and primitive values are serialized in a standard way. This is useful for 
+/// scenarios like hashing JSON content, comparing JSON structures for equality, or generating 
+/// consistent signatures for JSON data. 
+/// </summary>
 internal static class CanonicalJson
 {
    // Minimal canonicalizer: orders object properties lexicographically.
@@ -16,6 +23,15 @@ internal static class CanonicalJson
       return sb.ToString();
    }
 
+   /// <summary>
+   /// WriteCanonical recursively writes the JSON element to the StringBuilder in a canonical form. 
+   /// For objects, it orders the properties by name. For arrays, it writes the elements in order. 
+   /// For primitive values, it writes them in a standard way. This ensures that the same JSON 
+   /// structure will always produce the same string representation, regardless of the original 
+   /// formatting or property order. 
+   /// </summary>
+   /// <param name="el"></param>
+   /// <param name="sb"></param>
    private static void WriteCanonical(JsonElement el, StringBuilder sb)
    {
       switch (el.ValueKind)
